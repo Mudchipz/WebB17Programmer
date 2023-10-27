@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar js</title>
+</head>
+<body>
+    <h1 id="judul">Belajar javascript</h1>
+    <p id="hasil" style="background-color: aquamarine;"></p>
+    <div id="batas"></div>
+
+    <script>
+         var hasil2 = document.getElementById("hasil").innerHTML=hasil;
+
+         var nilai1 = 10;
+         var nilai2 = 20;
+         var hasil = nilai1 + nilai2;
+
+         console.log("hasil :"+ hasil);
+         hasil.innerHTML ="hasil :" + hasil;
+        
+         var hasil2 = document.getElementById("hasil").innerHTML=hasil;
+         var batas = "====".repeat(10);
+         document.getElementById("batas").innerHTML=batas;
+    </script>
+</body>
+</html>

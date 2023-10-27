@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <div class="paragraf">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat
+      recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo
+      dolorum consequatur sed laudantium suscipit quis magni, maiores in?
+    </p>
+</div>
+
+    <script>
+      var warna_warni = document.getElementsByClassName("paragraf")[0];
+
+      var warna = ["red", "green", "blue", "yellow", "pink", "purple"];
+      setTimeout(() => {
+        warna_warni.style.color = warna[0];
+      }, 2000);
+      var i = 0;
+      setInterval(() => {
+        warna_warni.style.color = warna[i];
+        i++;
+        if (i == warna.length) {
+          i = 0;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

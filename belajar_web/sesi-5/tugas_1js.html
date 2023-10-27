@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>tugas 1</h1>
+    <button onclick="ubahtext()" id="but1">klik aku</button>
+    <br>
+    <br>
+    <button> maju</button>
+    <br>
+    <br>
+    <button>mundur</button>
+</body>
+<script>
+    function ubahtext(){
+        var text = document.getElementById("but1")
+        if (text.innerHTML=="klik aku"){
+            text.innerHTML = "halo yal"
+        }else{
+            text.innerHTML = "klik aku"
+
+        }
+    }
+</script>
+</html>

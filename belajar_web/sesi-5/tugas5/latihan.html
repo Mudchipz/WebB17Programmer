@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan</title>
+  </head>
+  <body>
+    <label>pesan</label><input type="text" id="pesan" /><br />
+    <label>berapa kali</label><input type="number" id="jumlah" /><br />
+    <button onclick="cetak()">cetak</button>
+    <ol id="list"></ol>
+
+    <script>
+    function cetak() {
+      const tulis = document.getElementById("pesan").value;
+      const hitung = document.getElementById("jumlah").value;
+
+      for (let i = 0; i < hitung; i++) {
+        document.getElementById("list").innerHTML += `<li>${tulis}</li>`;
+      }
+    }
+    </script>
+  </body>
+</html>

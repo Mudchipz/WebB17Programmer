@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="nomor">0</p>
+    <br>
+    <button onclick="maju()"> maju</button>
+    <button onclick="mundur()">mundur</button>
+    <script>
+        var angka = 0;
+        var hasil = document.getElementById("nomor")
+
+        function mundur(){
+            angka--
+            nomor.innerHTML =angka
+        }
+        function maju(){
+            angka++
+            nomor.innerHTML = angka
+        }
+    </script>
+</body>
+</html>
